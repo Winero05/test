@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Waxawp - Envoi de Message</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Envoyer un Message</h1>
+        <div class="form-graphic"></div> <!-- Ajout d'une section pour le graphique -->
+        <form id="messageForm">
+            <label for="numero">Numéro :</label>
+            <input type="text" id="numero" name="numero" required><br>
+            
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" required></textarea><br>
+            
+            <label for="abonnement">Choisissez votre abonnement :</label>
+            <select id="abonnement" name="abonnement">
+                <option value="hebdomadaire">Hebdomadaire - 2300 XOF</option>
+                <option value="mensuel">Mensuel - 8100 XOF</option>
+                <option value="annuel">Annuel - 56700 XOF</option>
+            </select><br>
+            
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
+
